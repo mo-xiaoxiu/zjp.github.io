@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>This is ZJP&#39;s Blog</title>
+    <url>/2021/08/27/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p>从今天开始，我将会把近期学到的有关于C/C++的知识，以及平时学到的有关于数据结构与算法等计算机知识在这里做集合分享。加油！</p>
+<h1 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h1><h2 id="开篇之词"><a href="#开篇之词" class="headerlink" title="开篇之词"></a>开篇之词</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#incluide<span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Hello world!&quot;</span>&lt;&lt;endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>由于这是简单的开始，测试一下代码和文字是否有如期效果。</p>
+<h2 id="计划"><a href="#计划" class="headerlink" title="计划"></a>计划</h2><ul>
+<li>C、C++语言</li>
+<li>数据结构与算法</li>
+</ul>
+<p>目前先写有关于这两个部分的文章。</p>
+]]></content>
+  </entry>
+</search>
