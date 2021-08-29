@@ -4,14 +4,21 @@
     <title>This is ZJP&#39;s Blog</title>
     <url>/2021/08/27/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<p>从今天开始，我将会把近期学到的有关于C/C++的知识，以及平时学到的有关于数据结构与算法等计算机知识在这里做集合分享。加油！</p>
-<h1 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h1><h2 id="开篇之词"><a href="#开篇之词" class="headerlink" title="开篇之词"></a>开篇之词</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#incluide<span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Hello world!&quot;</span>&lt;&lt;endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>由于这是简单的开始，测试一下代码和文字是否有如期效果。</p>
-<h2 id="计划"><a href="#计划" class="headerlink" title="计划"></a>计划</h2><ul>
-<li>C、C++语言</li>
+<h1 id="新的开始"><a href="#新的开始" class="headerlink" title="新的开始"></a>新的开始</h1><p><em>微信公众号：墨小秀</em></p>
+<p><em>个人博客：</em><a href="https://mo-xiaoxiu.github.io/">https://mo-xiaoxiu.github.io/</a></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这是我新建的个人博客网站。在这里我将分享一些我学习各个邻域知识的知识点。由于本人并非专业，所以内容只能是尽自己的最大努力，写好每一篇文章。</p>
+<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>大致的内容如下：</p>
+<ul>
+<li>书法教程</li>
+<li>C、C++编程</li>
+<li>logo设计思路</li>
 <li>数据结构与算法</li>
+<li><em>期待……</em></li>
 </ul>
-<p>目前先写有关于这两个部分的文章。</p>
+<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>接下来是为了测试网站效果的代码示例：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">//list</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//create Node stuct</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Node</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> data;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span>*<span class="title">next</span>;</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//create nodelist</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">NodeList</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> size;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> <span class="title">header</span>;</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//init list</span></span><br><span class="line"><span class="function">struct NodeList*<span class="title">initNodeList</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">NodeList</span>*<span class="title">myList</span></span></span><br><span class="line"><span class="class">        =</span>(struct NodeList*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(struct NodeList));</span><br><span class="line">    myList-&gt;size=<span class="number">0</span>;</span><br><span class="line">    myList-&gt;header.next=<span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//add node</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">addNode</span><span class="params">(struct NodeList*myList,<span class="keyword">int</span> val)</span></span>&#123;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span>*<span class="title">newNode</span></span></span><br><span class="line"><span class="class">        =</span>(struct Node*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(struct Node));</span><br><span class="line">    <span class="keyword">if</span>(!newNode)&#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span>*<span class="title">cur</span>=</span>myList-&gt;header.next;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span>*<span class="title">pre</span>=</span>&amp;myList-&gt;header;</span><br><span class="line">    pre-&gt;next=newNode;</span><br><span class="line">    newNode-&gt;next=cur;</span><br><span class="line">    <span class="comment">// add over!</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ...</span></span><br></pre></td></tr></table></figure>
+
+<p><em>测试完毕</em></p>
 ]]></content>
   </entry>
 </search>
